@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never SMP - Survival Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="glass-theme">
+
+    <nav id="navbar">
+        <div class="logo">Never SMP</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#server">Server</a></li>
+            <li><a href="https://discord.gg/7dTvAzjTH6" target="_blank">Discord</a></li>
+            <li><button onclick="toggleSettings()">Settings</button></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="logo.png" alt="Never SMP Logo" class="main-logo">
+        <h1>Welcome to Never SMP</h1>
+        <p>The Ultimate Minecraft Survival Experience</p>
+    </header>
+
+    <section id="server">
+        <div class="glass-panel">
+            <h2>Server Info</h2>
+            <p>IP: <span id="ip-text">neversmp.tejaa.eu</span></p>
+            <p>Port: 5467</p>
+            <button onclick="copyIP()" class="btn-copy">Copy IP</button>
+            <div id="toast">Server IP copied successfully!</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
